@@ -14,15 +14,15 @@
   "contributes": {
     "commands": [
       {
-        "command": "markdown-palette.insertBold",
-        "title": "太字を挿入",
+        "command": "markdown-palette.toggleBold",
+        "title": "太字を挿入/解除",
         "icon": "$(bold)"
       }
     ],
     "menus": {
       "editor/title": [
         {
-          "command": "markdown-palette.insertBold",
+          "command": "markdown-palette.toggleBold",
           "group": "navigation",
           "when": "editorLangId == markdown"
         }
