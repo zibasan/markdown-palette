@@ -17,12 +17,22 @@
         "command": "markdown-palette.toggleBold",
         "title": "太字を挿入/解除",
         "icon": "$(bold)"
+      },
+      {
+        "command": "markdown-palette.toggleItalic",
+        "title": "斜体を挿入/解除",
+        "icon": "$(italic)"
       }
     ],
     "menus": {
       "editor/title": [
         {
           "command": "markdown-palette.toggleBold",
+          "group": "navigation",
+          "when": "editorLangId == markdown"
+        },
+        {
+          "command": "markdown-palette.toggleItalic",
           "group": "navigation",
           "when": "editorLangId == markdown"
         }
