@@ -14,10 +14,20 @@
   "contributes": {
     "commands": [
       {
-        "command": "markdown-palette.helloWorld",
-        "title": "Hello World"
+        "command": "markdown-palette.insertBold",
+        "title": "太字を挿入",
+        "icon": "$(bold)"
       }
-    ]
+    ],
+    "menus": {
+      "editor/title": [
+        {
+          "command": "markdown-palette.insertBold",
+          "group": "navigation",
+          "when": "editorLangId == markdown"
+        }
+      ]
+    }
   },
   "scripts": {
     "vscode:prepublish": "pnpm run compile",
